@@ -32,7 +32,7 @@
 
 * 本軟體為 Chrome 擴充程式
   - [原始碼 @ git repo](https://github.com/leafwind/plurkWhisperHider.git)
-  - [安裝網址 @ Chrome Web Store]()
+  - [安裝網址 @ Chrome Web Store](https://chrome.google.com/webstore/detail/%E5%99%97%E6%B5%AA%E5%81%B7%E5%81%B7%E8%AA%AA%E9%9A%B1%E8%97%8F%E5%99%A8/cfjgcnldjjjoejmoigomdobggjnphclh)
 
 ## CSS 遮蔽功能原始碼出處
 
