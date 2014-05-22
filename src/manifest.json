@@ -1,9 +1,9 @@
 {
   "name": "噗浪偷偷說隱藏器",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "manifest_version": 2,
 
-  "description": "隱藏所有噗浪偷偷說。原始碼下載： https://github.com/leafwind/plurkWhisperHider",
+  "description": "隱藏並消音所有噗浪偷偷說。",
 
   "background": {
     "scripts": ["background.js"]
@@ -15,6 +15,7 @@
   },
 
   "web_accessible_resources": [
+    "./strapdown/strapdown.js"
   ],
 
   "options_page": "options.html",

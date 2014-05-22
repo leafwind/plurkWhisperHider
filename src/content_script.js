@@ -1,5 +1,5 @@
 (function($) {
-    var DEBUG_ = true;
+    var DEBUG_ = false;
 
     function mutePlurk(pid, v) {
         $.ajax({
@@ -7,15 +7,15 @@
             url: "/TimeLine/setMutePlurk",
             data: "plurk_id=" + pid + "&value=" + v,
             success: function(msg) {
-                //console.debug( "set_mute:" + msg  );
+                if(DEBUG_) console.debug( "set_mute:" + msg  );
             }
         });
     }
 
     var hideWhisperPlurk = function() {
-        $("div[data-uid='99999']")
+        $("#timeline_cnt").find("div[data-uid='99999']")
         .each(function(idx, whisperPlurk) {
-            console.log($(whisperPlurk).html());
+            if(DEBUG_) console.log($(whisperPlurk).html());
             $(whisperPlurk).css({
                 "display": "none",
                 "height": "0", // !important;
@@ -40,7 +40,7 @@
     var main = function() {
         setInterval(function() {
             hideWhisperPlurk();
-        }, 1000); // repeat per second
+        }, 3000); // repeat per 3 second
     };
 
     main();
